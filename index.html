@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <title>TABELKI</title>
+    <meta charset="UTF-8"/>
+    <style>
+        body 
+		{
+            background-color: black;
+            color: blue;
+            font-family: calibri;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        table 
+		{
+            border-collapse: collapse;
+            margin: 20px auto;
+            color: green;
+        }
+
+        th, td 
+		{
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border: 1px solid white;
+        }
+
+        th 
+		{
+            font-weight: bold;
+            color: white;
+        }
+
+        .ini {
+            background-color: black;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela bez scalania</h1>
+    <table>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th>2</th> <td>A</td> <td>B</td> <td>C</td> <td>D</td> <td>E</td>
+        </tr>
+        <tr>
+            <th>3</th> <td>F</td> <td>G</td> <td>H</td> <td>I</td> <td>J</td>
+        </tr>
+        <tr>
+            <th>4</th> <td>K</td> <td>L</td> <td>M</td> <td>N</td> <td>O</td>
+        </tr>
+        <tr>
+            <th>5</th> <td>P</td> <td>Q</td> <td>R</td> <td>S</td> <td>T</td>
+        </tr>
+        <tr>
+            <th>6</th> <td>U</td> <td>V</td> <td>W</td> <td>Y</td> <td>Z</td>
+        </tr>
+    </table>
+
+    <h1>Tabela z scalaniem</h1>
+    <table>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th>2</th> <td>A</td> <td colspan="2">B, C</td> <td colspan="2" class="ini">D, W</td>
+        </tr>
+        <tr>
+            <th>3</th> <td>F</td> <td>G</td> <td>H</td> <td>I</td> <td> J</td>
+        </tr>
+        <tr>
+            <th>4</th> <td>K</td> <td>L</td> <td>M</td> <td>N</td> <td> O</td>
+        </tr>
+        <tr>
+            <th>5</th> <td colspan="3" rowspan="2">P, Q, R, U, V, W</td> <td>S</td> <td>T</td>
+        </tr>
+        <tr>
+            <th>6</th> <td>Y</td> <td>Z</td>
+        </tr>
+    </table>
+
+    <h1>Tabela z scalonymi inicjałami</h1>
+    <table>
+        <tr>
+            <th>1</th> <th>2</th> <th>3</th> <th>4</th> <th>5</th> <th>6</th>
+        </tr>
+        <tr>
+            <th>2</th> <td>A</td> <td>B</td> <td colspan="3" class="ini">D, W</td>
+        </tr>
+        <tr>
+            <th>3</th> <td>F</td> <td>G</td> <td>H</td> <td>I</td> <td>P</td>
+        </tr>
+        <tr>
+            <th>4</th> <td>K</td> <td>L</td> <td>M</td> <td>N</td> <td>O</td>
+        </tr>
+        <tr>
+            <th>5</th> <td>P</td> <td>Q</td> <td>R</td> <td>S</td> <td>T</td>
+        </tr>
+        <tr>
+            <th>6</th> <td>U</td> <td>V</td> <td>W</td> <td>Y</td> <td>Z</td>
+        </tr>
+    </table>
+</body>
+</html>
